@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire</title>
+  </head>
+
+  <body>
+    <h1>Mon premier formulaire HTML5</h1>
+    <fieldset class="main">
+      <legend>Vos donneés personnelles</legend>
+      <div class="formulaire">
+        <form class="form">
+          <div class="case">
+            <label for="Nom"> Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" oninput="hideText(this)" />
+
+          </div>
+          <div class="case">
+            <label for="prenom">prenom</label>
+            <input
+              type="text"
+          
+              id="prenom"
+              name="prenom"
+              placeholder="   Votre prenom"
+            />
+          </div>
+          <div class="case">
+            <label for="Date_de_naissance"> Date de naissance</label>
+            <input
+              type="text"
+              id="Date_de_naissance"
+              name="Date_de_naissance"
+            />
+          </div>
+          <fieldset class="lieu">
+            <legend>Lieu de naissance</legend>
+            <input type="radio" name="lieu" id="Seine_Saint_Denis" />
+            <label for="lieu"> Seine-Saint-denis</label>
+            <input type="radio" name="lieu" id="Reste_du_monde" />
+            <label for="lieu"> Reste_du_monde</label>
+          </fieldset>
+          <div class="case">
+            <label for="Adresse_Postal">Adresse Postal </label>
+            <textarea
+              cols="30"
+              rows="2"
+              type="text"
+              id="Code_postal"
+              name="Code_postal"
+              placeholder=" Votre adresse"
+            ></textarea>
+          </div>
+          <div class="case">
+            <label for="Code_postal">Code postal </label>
+            <input
+              type="number"
+              id="Code_postal"
+              name="Code_postal"
+              placeholder="93000"
+            />
+          </div>
+          <div class="case">
+            <label for="Adresse_électronique">Adresse électronique </label>
+            <input
+              type="email"
+              id="Adresse_électronique"
+              name="Adresse_électronique"
+              placeholder=" Votre Adresse électronique"
+            />
+          </div>
+          <div class="case">
+            <label for="Page_personnelle">Page personnelle</label>
+            <input
+              type="url"
+              id="Page_personnelle"
+              name="Page_personnelle"
+              placeholder=" Votre Page Web"
+            />
+          </div>
+          <div class="case">
+            <label for="Téléphone">Téléphone portable</label>
+            <input
+              type="number"
+              id="Téléphone"
+              name="Téléphone"
+              placeholder="0601234567"
+            />
+          </div>
+          <div class="case">
+            <label for="Semestre"> Semestre</label>
+            <select name="Semestre" id="Semestre">
+              <option value="S1">S1</option>
+              <option selected value="S2">S2</option>
+              <option value="S3">S3</option>
+              <option value="S4">S4</option>
+              <option value="S5">S5</option>
+              <option value="S6">S6</option>
+            </select>
+          </div>
+          <div class="case">
+            <label for="Niveau"> Niveau en HTML </label>
+            <input
+              type="range"
+              id="Niveau"
+              name="Niveau"
+              min="0"
+              max="10"
+              step="1"
+              value="0"
+            />
+          </div>
+          <fieldset class="Connaissances">
+            <legend>Connaissances</legend>
+            <div class="box">
+              <input type="checkbox" checked name="Choix" id="HTML" />
+              <label for="HTML">HTML</label>
+
+              <input type="checkbox" name="Choix" id="CSS" />
+              <label for="CSS">CSS</label>
+
+              <input type="checkbox" name="formulaires" id="formulaires" />
+              <label for="formulaires">formulaires</label>
+
+              <input type="checkbox" name="Choix" id="JavaScript" />
+              <label for="JavaScript">JavaScript</label>
+            </div>
+          </fieldset>
+          <div class="case">
+            <input type="submit" value="Envoyer" name="" id="" />
+          </div>
+        </form>
+      </div>
+    </fieldset>
+    <h3>Formulaire réalisé dans le cadre du TP du cours M1106</h3>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
